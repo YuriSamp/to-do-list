@@ -1,17 +1,19 @@
 
 :root {
-	--primary: #EA40A4;
-	--business: #3a82ee;
-	--personal: var(--primary);
-	--light: #EEE;
-	--grey: #888;
-	--dark: #313154;
+	--primary: #f89232;
+	--secondary:#ec6060;
+	--business: #4d7cfc;
+	--personal: var(--secondary);
+	--light: #8E5D52;
+	--grey: rgb(5, 5, 5);
+	--dark: rgb(255, 206, 116);
+	--darkfont:#000000;
 	--danger: #ff5b57;
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
 	--business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
-	--personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+	--personal-glow: 0px 0px 4px rgba(185, 100, 2, 0.75);
 }
 
 * {
@@ -87,7 +89,7 @@ h4 {
 	width: 100%;
 	font-size: 1.125rem;
 	padding: 1rem 1.5rem;
-	color: var(--dark);
+	color: var(--darkfont);
 	background-color: #FFF;
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow);
@@ -158,7 +160,7 @@ input:checked ~ .bubble::after {
 }
 
 .create-todo .options label div {
-	color: var(--dark);
+	color: var(--darkfont);
 	font-size: 1.125rem;
 	margin-top: 1rem;
 }
@@ -207,7 +209,7 @@ input:checked ~ .bubble::after {
 }
 
 .todo-item .todo-content input {
-	color: var(--dark);
+	color: var(--darkfont);
 	font-size: 1.125rem;
 }
 
