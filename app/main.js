@@ -116,3 +116,18 @@ function DisplayTodos () {
 
 	})
 }
+
+function MudaConformeHorario(){
+
+	var msg = window.document.getElementById('welcome');
+	var data = new Date();
+	var hora = data.getHours();
+
+	 if (hora>6 && hora<=12) {
+		msg.innerHTML = `Good morning`
+	} else if (hora>12 && hora <=18) {
+		msg.innerHTML = `Good evening`
+	} else if(hora>18 && hora<=24) {
+		msg.innerHTML = `Good night`
+	}
+}
